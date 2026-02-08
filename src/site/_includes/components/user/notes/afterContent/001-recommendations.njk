@@ -1,0 +1,23 @@
+{%- if title -%}
+<div id="article-recommendations">
+  <div class="recommendations-title">You might also like</div>
+  <div class="recommendations-list">
+    {%- for note in collections.note | limit(4) -%}
+      {%- if note.data.title and note.data.title !== title and note.url !== page.url -%}
+        <a href="{{ note.url }}" class="recommendation-card">
+          <h3>{{ note.data.title or note.fileSlug }}</h3>
+          {%- if note.data.tags -%}
+            <div class="recommendation-tags">
+              {%- for tag in note.data.tags | slice(0, 2) -%}
+                {%- if tag != 'gardenEntry' and tag != 'note' -%}
+                  <span class="tag">#{{ tag }}</span>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+        </a>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+{%- endif -%}

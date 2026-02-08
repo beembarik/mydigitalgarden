@@ -1,0 +1,42 @@
+<script>
+(function() {
+  const STORAGE_KEY = 'recentPosts';
+  const MAX_RECENT = 5;
+  
+  function trackPostView() {
+    const pathname = window.location.pathname;
+    const title = document.querySelector('h1')?.textContent || document.title;
+    const timestamp = new Date().toISOString();
+    
+    // Get recent posts from localStorage
+    let recentPosts = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+    
+    // Remove if already exists
+    recentPosts = recentPosts.filter(p => p.pathname !== pathname);
+    
+    // Add current post
+    recentPosts.unshift({ pathname, title, timestamp });
+    
+    // Keep only last 5
+    recentPosts = recentPosts.slice(0, MAX_RECENT);
+    
+    // Save back to localStorage
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(recentPosts));
+    
+    // Dispatch custom event for other scripts to listen
+    window.dispatchEvent(new CustomEvent('postTracked', { detail: { pathname, title, timestamp } }));
+  }
+  
+  // Track on page load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', trackPostView);
+  } else {
+    trackPostView();
+  }
+  
+  // Expose function globally for widget use
+  window.getRecentPosts = function() {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+  };
+})();
+</script>

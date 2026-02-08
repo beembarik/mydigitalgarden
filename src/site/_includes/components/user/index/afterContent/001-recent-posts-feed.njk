@@ -1,0 +1,44 @@
+{%- if collections.note and collections.note.length > 0 -%}
+<div id="recent-posts-feed">
+  <div class="feed-header">
+    <h2>Latest Posts</h2>
+  </div>
+  <div class="feed-container">
+    {%- for note in collections.note | reverse | limit(6) -%}
+      {%- if note.data.title -%}
+        <article class="feed-item">
+          <div class="feed-item-header">
+            <h3>
+              <a href="{{ note.url }}" class="feed-title-link">{{ note.data.title }}</a>
+            </h3>
+          </div>
+          {%- if note.data.created or note.data.updated -%}
+            <div class="feed-meta">
+              {%- if note.data.created -%}
+                <span class="feed-date"><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="{{ note.data.created }}"></span></span>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+          {%- if note.data.tags -%}
+            <div class="feed-tags">
+              {%- for tag in note.data.tags | slice(0, 3) -%}
+                {%- if tag != 'gardenEntry' and tag != 'note' -%}
+                  <a href="#" class="feed-tag" onclick="toggleTagSearch(this)">#{{ tag }}</a>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+          <div class="feed-description">
+            {%- if note.excerpt -%}
+              {{ note.excerpt | safe }}
+            {%- else -%}
+              <p>{{ note.templateContent | striptags | truncate(150, true) }}</p>
+            {%- endif -%}
+          </div>
+          <a href="{{ note.url }}" class="feed-read-more">Read more →</a>
+        </article>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+{%- endif -%}

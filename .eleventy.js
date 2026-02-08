@@ -337,6 +337,39 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  // Common template helpers used by some user components
+  eleventyConfig.addFilter("limit", function (input, count) {
+    if (input == null) return Array.isArray(input) ? [] : "";
+    if (typeof input === "string") return input.slice(0, count);
+    if (Array.isArray(input)) return input.slice(0, Number(count));
+    return input;
+  });
+
+  eleventyConfig.addFilter("slice", function (input, start, end) {
+    if (input == null) return Array.isArray(input) ? [] : "";
+    if (typeof input === "string") return input.slice(start, end);
+    if (Array.isArray(input)) return input.slice(Number(start) || 0, end === undefined ? undefined : Number(end));
+    return input;
+  });
+
+  eleventyConfig.addFilter("truncate", function (input, length = 100, useWordBoundary = false) {
+    if (input == null) return "";
+    const s = String(input);
+    const len = Number(length) || 0;
+    if (s.length <= len) return s;
+    let truncated = s.slice(0, len);
+    if (useWordBoundary) {
+      const idx = truncated.lastIndexOf(" ");
+      if (idx > 0) truncated = truncated.slice(0, idx);
+    }
+    return truncated + "…";
+  });
+
+  eleventyConfig.addFilter("striptags", function (input) {
+    if (input == null) return "";
+    return String(input).replace(/<[^>]*>/g, "");
+  });
+
   eleventyConfig.addFilter("searchableTags", function (str) {
     let tags;
     let match = str && str.match(tagRegex);
