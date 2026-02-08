@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/blog/tempo-bacaan/","noteIcon":""}
+{"dg-publish":true,"permalink":"/blog/tempo-bacaan/","noteIcon":"","created":"2026-02-08T13:40:55.851+07:00","updated":"2026-02-08T13:42:45.675+07:00"}
 ---
 
 ## Tingkatkan tempo bacaan Al-Qur'an:
