@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/hukum-tajwid/","noteIcon":"","created":"2026-02-08T20:39:56.543+07:00","updated":"2026-02-09T02:57:06.918+07:00"}
+{"dg-publish":true,"permalink":"/hukum-tajwid/","created":"2026-02-08T20:39:56.543+07:00","updated":"2026-02-09T02:57:06.918+07:00"}
 ---
 
 

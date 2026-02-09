@@ -1,16 +1,53 @@
 ---
-{"dg-publish":true,"permalink":"/tartila-learn-tajwid-on-the-go/","tags":["gardenEntry"],"noteIcon":"","created":"2026-02-08T07:10:35.478+07:00","updated":"2026-02-08T13:43:40.443+07:00"}
+{"dg-publish":true,"permalink":"/tartila-learn-tajwid-on-the-go/","tags":["gardenEntry"],"created":"2026-02-08T07:10:35.478+07:00","updated":"2026-02-09T09:47:28.213+07:00"}
 ---
 
-# Welcome to Tartila
-`Fun Tajweed on the Go`
+Tartila Garden
 
-السلام عليكم ورحمة الله وبركاتة
+Ideas wander, drift, and roam.
+This little garden gives them a home.
 
-Blog ini berisi catatan saya selama belajar tahsin tilawah—tahfizh di RQA
-Berapa catatan mungkin saya beri tambahan atau mengalami penyesuaian karena kontradiksi dengan catatan sebelum atau sesudahnya.
+---
 
-والسلام عليكم ورحمة الله وبركاتة
+This is my digital garden—a public notebook of notes, reflections,
+and small experiments while learning tajwid, tahsin, and memorizing the Qur’an.
 
+Nothing here is final.
+Some ideas will change.
+Some notes will grow.
+This space evolves as I learn.
 
-Catatan tahsin bisa diakses di  [[]]
+---
+
+What grows in this garden
+
+- Tajwid and tahsin notes
+- Reflections from learning and teaching
+- Memorization methods and observations
+- Unfinished thoughts worth revisiting
+
+---
+
+How to read this garden
+
+This garden isn’t meant to be read from start to finish.
+
+You can:
+
+- browse notes
+- follow links between pages
+- explore the graph
+- or land anywhere and simply wander
+
+---
+
+Start exploring
+
+- [[Tajwid/Tajwid\|Tajwid]]
+- [[Tahfizh\|Tahfizh]]
+- [[Reflections\|Reflections]]
+
+---
+
+`A garden grows slowly.`
+`So do we.`
