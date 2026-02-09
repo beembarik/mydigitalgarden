@@ -1,301 +1,63 @@
 <aside id="floating-menu">
   <div class="floating-menu-container">
     <button id="menu-toggle" class="menu-button main" title="Menu">
+      <!-- grid icon -->
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="12" cy="12" r="1"></circle>
-        <circle cx="19" cy="12" r="1"></circle>
-        <circle cx="5" cy="12" r="1"></circle>
+        <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+        <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+        <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+        <rect x="3" y="14" width="7" height="7" rx="1"></rect>
       </svg>
     </button>
-    
+
     <nav id="menu-items" class="menu-items hidden">
-      <a href="https://tartila-garden.vercel.app" class="menu-item" title="Home">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-          <polyline points="9 22 9 12 15 12 15 22"></polyline>
-        </svg>
+      <!-- PRIMARY -->
+      <a href="{{ '/' | url }}" class="menu-item" title="Home">
         <span>Home</span>
       </a>
-      
-      <button id="theme-toggle" class="menu-item" title="Toggle Theme">
-        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-        <span>Theme</span>
-      </button>
-      
+
       <button id="recent-posts-btn" class="menu-item" title="Recent Posts">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-        </svg>
         <span>Recent</span>
       </button>
 
       <button id="graph-btn" class="menu-item" title="Global Graph">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="1"></circle>
-          <circle cx="19" cy="5" r="1"></circle>
-          <circle cx="5" cy="19" r="1"></circle>
-          <circle cx="5" cy="5" r="1"></circle>
-          <circle cx="19" cy="19" r="1"></circle>
-          <line x1="12" y1="12" x2="19" y2="5"></line>
-          <line x1="12" y1="12" x2="5" y2="19"></line>
-          <line x1="12" y1="12" x2="5" y2="5"></line>
-          <line x1="12" y1="12" x2="19" y2="19"></line>
-        </svg>
         <span>Graph</span>
       </button>
-      
-      <a href="https://github.com/beembarik/mydigitalgarden" title="GitHub" target="_blank" class="menu-item" rel="noopener">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
-        </svg>
+
+      <div class="menu-divider"></div>
+
+      <!-- SECONDARY -->
+      <button id="theme-toggle" class="menu-item" title="Toggle Theme">
+        <span>Theme</span>
+      </button>
+
+      <a href="https://github.com/beembarik/mydigitalgarden" 
+         target="_blank" rel="noopener" 
+         class="menu-item" title="GitHub">
         <span>GitHub</span>
       </a>
     </nav>
   </div>
-  
+
+  <!-- RECENT MODAL -->
   <div id="recent-posts-modal" class="modal hidden">
-    <div class="modal-content">
+    <div class="modal-content glass">
       <div class="modal-header">
         <h2>Recently Read</h2>
         <button class="close-btn" id="close-recent">&times;</button>
       </div>
-      <div id="recent-posts-list" class="modal-body">
-        <!-- Populated by script -->
-      </div>
+      <div id="recent-posts-list" class="modal-body"></div>
     </div>
   </div>
 
+  <!-- GRAPH MODAL -->
   <div id="graph-modal" class="modal hidden">
-    <div class="modal-content graph-modal-content">
+    <div class="modal-content glass graph-modal-content">
       <div class="modal-header">
         <h2>Global Graph</h2>
-        <div class="graph-controls">
-          <button id="graph-mode-toggle" class="menu-item" title="Toggle 2D/3D">3D</button>
-        </div>
         <button class="close-btn" id="close-graph">&times;</button>
       </div>
-      <div id="graph-container" class="modal-body graph-body">
-        <canvas id="graph-canvas"></canvas>
-      </div>
+      <div id="graph-container" class="modal-body graph-body"></div>
     </div>
   </div>
 </aside>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
-<script src="https://unpkg.com/force-graph@1.43.1/dist/force-graph.min.js"></script>
-
-<script>
-(function() {
-  const menuToggle = document.getElementById('menu-toggle');
-  const menuItems = document.getElementById('menu-items');
-  const themeToggle = document.getElementById('theme-toggle');
-  const sunIcon = themeToggle.querySelector('.sun-icon');
-  const moonIcon = themeToggle.querySelector('.moon-icon');
-  const recentPostsBtn = document.getElementById('recent-posts-btn');
-  const recentPostsModal = document.getElementById('recent-posts-modal');
-  const closeRecentBtn = document.getElementById('close-recent');
-  const recentPostsList = document.getElementById('recent-posts-list');
-  const graphBtn = document.getElementById('graph-btn');
-  const graphModal = document.getElementById('graph-modal');
-  const closeGraphBtn = document.getElementById('close-graph');
-  let graphInstance = null;
-  
-  // Menu toggle
-  menuToggle.addEventListener('click', function() {
-    menuItems.classList.toggle('hidden');
-    menuToggle.classList.toggle('active');
-  });
-  
-  // Close menu when clicking outside
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('#floating-menu')) {
-      menuItems.classList.add('hidden');
-      menuToggle.classList.remove('active');
-    }
-  });
-  
-  // Theme toggle
-  function updateThemeIcon() {
-    const isDark = document.documentElement.getAttribute('data-theme') === 'dark' || 
-                   document.body.classList.contains('theme-dark');
-    if (isDark) {
-      sunIcon.style.display = 'none';
-      moonIcon.style.display = 'block';
-    } else {
-      sunIcon.style.display = 'block';
-      moonIcon.style.display = 'none';
-    }
-  }
-  
-  themeToggle.addEventListener('click', function() {
-    const isDark = document.body.classList.contains('theme-dark');
-    if (isDark) {
-      document.body.classList.remove('theme-dark');
-      document.body.classList.add('theme-light');
-      localStorage.setItem('theme', 'light');
-    } else {
-      document.body.classList.remove('theme-light');
-      document.body.classList.add('theme-dark');
-      localStorage.setItem('theme', 'dark');
-    }
-    updateThemeIcon();
-  });
-  
-  updateThemeIcon();
-  
-  // Recent posts modal
-  recentPostsBtn.addEventListener('click', function() {
-    recentPostsModal.classList.toggle('hidden');
-    updateRecentPostsList();
-  });
-  
-  closeRecentBtn.addEventListener('click', function() {
-    recentPostsModal.classList.add('hidden');
-  });
-  
-  recentPostsModal.addEventListener('click', function(e) {
-    if (e.target === recentPostsModal) {
-      recentPostsModal.classList.add('hidden');
-    }
-  });
-  
-  // Global graph modal
-  let graphMode = '3d'; // default mode
-
-  const graphModeToggle = document.getElementById('graph-mode-toggle');
-  if (graphModeToggle) {
-    graphModeToggle.addEventListener('click', function() {
-      graphMode = (graphMode === '3d') ? '2d' : '3d';
-      graphModeToggle.textContent = graphMode === '3d' ? '3D' : '2D';
-      // if graph already open, re-init in new mode
-      if (!graphModal.classList.contains('hidden')) {
-        initializeGraph();
-      }
-    });
-  }
-
-  graphBtn.addEventListener('click', function() {
-    graphModal.classList.toggle('hidden');
-    if (!graphModal.classList.contains('hidden')) {
-      setTimeout(() => initializeGraph(), 100);
-    }
-  });
-  
-  closeGraphBtn.addEventListener('click', function() {
-    graphModal.classList.add('hidden');
-  });
-  
-  graphModal.addEventListener('click', function(e) {
-    if (e.target === graphModal) {
-      graphModal.classList.add('hidden');
-    }
-  });
-  
-  function initializeGraph() {
-    const container = document.getElementById('graph-container');
-    const isDark = document.body.classList.contains('theme-dark');
-
-    fetch('/graph.json')
-      .then(res => res.json())
-      .then(data => {
-        if (!data.nodes || data.nodes.length === 0) {
-          container.innerHTML = '<p style="text-align:center;padding:2rem;color:#999;">No graph data available</p>';
-          return;
-        }
-
-        container.innerHTML = '';
-
-        if (graphInstance && graphInstance.pauseAnimation) {
-          // cleanup 3d instance
-          try { graphInstance.pauseAnimation(); } catch(e) {}
-        }
-
-        if (graphMode === '3d') {
-          // 3D graph
-          const el = document.createElement('div');
-          el.style.width = '100%';
-          el.style.height = '100%';
-          container.appendChild(el);
-          const fg = ForceGraph3D()(el)
-            .graphData(data)
-            .nodeAutoColorBy(d => d.group || 1)
-            .nodeRelSize(4)
-            .linkOpacity(0.3)
-            .linkColor(() => isDark ? '#444' : '#ddd')
-            .onNodeClick(node => { if (node.url) window.location.href = node.url; });
-          graphInstance = fg;
-        } else {
-          // 2D graph
-          const canvas = document.createElement('div');
-          canvas.style.width = '100%';
-          canvas.style.height = '100%';
-          container.appendChild(canvas);
-          const fg2 = ForceGraph()(canvas)
-            .graphData(data)
-            .nodeAutoColorBy(d => d.group || 1)
-            .nodeVal(() => 3)
-            .linkOpacity(0.3)
-            .linkColor(() => isDark ? '#444' : '#ddd')
-            .onNodeClick(node => { if (node.url) window.location.href = node.url; });
-          graphInstance = fg2;
-        }
-      })
-      .catch(err => {
-        console.error('Error loading graph:', err);
-        const container2 = document.getElementById('graph-container');
-        if (container2) container2.innerHTML = '<p style="text-align:center;padding:2rem;color:#999;">Unable to load graph data</p>';
-      });
-  }
-  
-  function updateRecentPostsList() {
-    const recentPosts = JSON.parse(localStorage.getItem('recentPosts') || '[]');
-    if (recentPosts.length === 0) {
-      recentPostsList.innerHTML = '<p class="empty-message">No recently read posts</p>';
-      return;
-    }
-    
-    recentPostsList.innerHTML = recentPosts.map(post => {
-      const date = new Date(post.timestamp);
-      const timeAgo = getTimeAgo(date);
-      return `
-        <a href="${post.pathname}" class="recent-post-item">
-          <div class="recent-post-title">${escapeHtml(post.title)}</div>
-          <div class="recent-post-time">${timeAgo}</div>
-        </a>
-      `;
-    }).join('');
-  }
-  
-  function getTimeAgo(date) {
-    const now = new Date();
-    const seconds = Math.floor((now - date) / 1000);
-    if (seconds < 60) return 'now';
-    const minutes = Math.floor(seconds / 60);
-    if (minutes < 60) return `${minutes}m ago`;
-    const hours = Math.floor(minutes / 60);
-    if (hours < 24) return `${hours}h ago`;
-    const days = Math.floor(hours / 24);
-    return `${days}d ago`;
-  }
-  
-  function escapeHtml(text) {
-    const map = {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'};
-    return text.replace(/[&<>"']/g, m => map[m]);
-  }
-})();
-</script>
