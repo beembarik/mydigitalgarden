@@ -63,25 +63,30 @@
         if (graphData == null) {
             return;
         }
-        const el = document.getElementById(id);
-        if (!el) {
+        const container = document.getElementById(id);
+        if (!container) {
             return;
         }
         if (typeof ForceGraph === 'undefined') {
             return;
         }
-        width = el.offsetWidth;
-        height = el.offsetHeight;
+        const width = container.offsetWidth;
+        const height = container.offsetHeight;
         if (width === 0 || height === 0) {
             return;
         }
+        // Remove any previous inner graph container and create a fresh one
+        container.innerHTML = '';
+        const el = document.createElement('div');
+        el.style.width = '100%';
+        el.style.height = '100%';
+        container.appendChild(el);
         try {
         const highlightNodes = new Set();
         let hoverNode = null;
         const color = getCssVar("--graph-main");
         const mutedColor = getCssVar("--graph-muted");
-        let Graph = ForceGraph()
-        (el)
+        let Graph = ForceGraph()(el)
             .graphData(graphData)
             .nodeId('id')
             .nodeLabel('title')
