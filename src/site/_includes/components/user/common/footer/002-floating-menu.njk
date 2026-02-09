@@ -11,31 +11,13 @@
     </button>
 
     <nav id="menu-items" class="menu-items hidden">
-      <!-- PRIMARY -->
-      <a href="{{ '/' | url }}" class="menu-item" title="Home">
-        <span>Home</span>
-      </a>
-
-      <button id="recent-posts-btn" class="menu-item" title="Recent Posts">
-        <span>Recent</span>
-      </button>
-
-      <button id="graph-btn" class="menu-item" title="Global Graph">
-        <span>Graph</span>
-      </button>
-
-      <div class="menu-divider"></div>
-
-      <!-- SECONDARY -->
-      <button id="theme-toggle" class="menu-item" title="Toggle Theme">
-        <span>Theme</span>
-      </button>
-
-      <a href="https://github.com/beembarik/mydigitalgarden" 
-         target="_blank" rel="noopener" 
-         class="menu-item" title="GitHub">
-        <span>GitHub</span>
-      </a>
+      <a href="{{ '/' | url }}" class="menu-item">Home</a>
+      <button id="recent-posts-btn" class="menu-item">Recent</button>
+      <button id="graph-btn" class="menu-item">Graph</button>
+      <button id="theme-toggle" class="menu-item">Theme</button>
+      <a href="https://github.com/beembarik/mydigitalgarden"
+         target="_blank" rel="noopener"
+         class="menu-item">GitHub</a>
     </nav>
   </div>
 
@@ -61,3 +43,93 @@
     </div>
   </div>
 </aside>
+
+<!-- graph libs -->
+<script src="https://unpkg.com/force-graph@1.43.1/dist/force-graph.min.js"></script>
+
+<script>
+(function() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const menuItems = document.getElementById('menu-items');
+  const themeToggle = document.getElementById('theme-toggle');
+  const recentBtn = document.getElementById('recent-posts-btn');
+  const graphBtn = document.getElementById('graph-btn');
+
+  const recentModal = document.getElementById('recent-posts-modal');
+  const graphModal = document.getElementById('graph-modal');
+
+  const closeRecent = document.getElementById('close-recent');
+  const closeGraph = document.getElementById('close-graph');
+
+  let graphLoaded = false;
+
+  // MENU TOGGLE
+  menuToggle.addEventListener('click', () => {
+    menuItems.classList.toggle('hidden');
+    menuToggle.classList.toggle('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('#floating-menu')) {
+      menuItems.classList.add('hidden');
+      menuToggle.classList.remove('active');
+    }
+  });
+
+  // THEME
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('theme-dark');
+    document.body.classList.toggle('theme-light');
+  });
+
+  // RECENT MODAL
+  recentBtn.addEventListener('click', () => {
+    recentModal.classList.remove('hidden');
+  });
+
+  closeRecent.addEventListener('click', () => {
+    recentModal.classList.add('hidden');
+  });
+
+  // GRAPH MODAL
+  graphBtn.addEventListener('click', () => {
+    graphModal.classList.remove('hidden');
+
+    if (!graphLoaded) {
+      setTimeout(initGraph, 100);
+      graphLoaded = true;
+    }
+  });
+
+  closeGraph.addEventListener('click', () => {
+    graphModal.classList.add('hidden');
+  });
+
+  function initGraph() {
+    const container = document.getElementById('graph-container');
+
+    fetch('/graph.json')
+      .then(res => res.json())
+      .then(data => {
+        container.innerHTML = '';
+
+        const el = document.createElement('div');
+        el.style.width = '100%';
+        el.style.height = '100%';
+        container.appendChild(el);
+
+        ForceGraph()(el)
+          .graphData(data)
+          .nodeAutoColorBy('group')
+          .linkOpacity(0.3)
+          .onNodeClick(node => {
+            if (node.url) window.location.href = node.url;
+          });
+      })
+      .catch(() => {
+        container.innerHTML =
+          '<p style="text-align:center;padding:2rem;">Graph not available</p>';
+      });
+  }
+})();
+</script>
