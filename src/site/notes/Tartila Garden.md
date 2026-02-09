@@ -1,7 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/tartila-garden/","tags":["gardenEntry"],"created":"2026-02-08T07:10:35.478+07:00","updated":"2026-02-09T10:46:45.438+07:00"}
+{"dg-publish":true,"permalink":"/tartila-garden/","tags":["gardenEntry"],"created":"2026-02-08T07:10:35.478+07:00","updated":"2026-02-09T11:56:32.798+07:00"}
 ---
 
+![icon-512.png](/img/user/assets/icon-512.png)
 # Tartila Garden
 
 ## Ideas wander, drift, and roam.

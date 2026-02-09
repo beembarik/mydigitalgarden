@@ -13,7 +13,7 @@ Sebagian catatan masih dasar, sebagian lebih mendalam, dan banyak yang akan teru
 
 ## Topik utama
 
-- [[Makharijul Huruf\|Makharijul Huruf]]
+- [[Tajwid/Makharijul Huruf\|Makharijul Huruf]]
 - [[Sifat Huruf\|Sifat Huruf]]
 - [[Hukum Nun Sukun dan Tanwin\|Hukum Nun Sukun dan Tanwin]]
 - [[Hukum Mim Sukun\|Hukum Mim Sukun]]
