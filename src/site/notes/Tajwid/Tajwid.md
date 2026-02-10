@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tajwid/tajwid/","created":"2026-02-09T09:42:32.913+07:00","updated":"2026-02-09T09:47:36.501+07:00"}
+{"dg-publish":true,"permalink":"/tajwid/tajwid/","created":"2026-02-09T09:42:32.913+07:00","updated":"2026-02-10T14:07:33.341+07:00"}
 ---
 
 # Tajwid
@@ -13,7 +13,7 @@ Sebagian catatan masih dasar, sebagian lebih mendalam, dan banyak yang akan teru
 
 ## Topik utama
 
-- [[Tajwid/Makharijul Huruf\|Makharijul Huruf]]
+- [[Tajwid/Makharijul Huruf Mindmap\|Makharijul Huruf Mindmap]]
 - [[Sifat Huruf\|Sifat Huruf]]
 - [[Hukum Nun Sukun dan Tanwin\|Hukum Nun Sukun dan Tanwin]]
 - [[Hukum Mim Sukun\|Hukum Mim Sukun]]
