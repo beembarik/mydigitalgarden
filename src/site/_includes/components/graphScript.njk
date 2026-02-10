@@ -86,8 +86,10 @@
         try {
         const highlightNodes = new Set();
         let hoverNode = null;
+        let currentZoom = 1;
         const color = getCssVar("--graph-main");
         const mutedColor = getCssVar("--graph-muted");
+        const zoomThreshold = 1.2;
         let Graph = ForceGraph()(el)
             .graphData(graphData)
             .nodeId('id')
