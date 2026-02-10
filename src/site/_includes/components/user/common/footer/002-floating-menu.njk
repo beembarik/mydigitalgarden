@@ -169,7 +169,26 @@
 
   function initGraph() {
     const container = document.getElementById('graph-container');
+    if (!container) {
+      console.error('graph-container element not found');
+      return;
+    }
+
     container.innerHTML = '<div style="text-align:center;padding:2rem;"><p style="opacity:0.7;">Loading graph...</p></div>';
+
+    // Check if ForceGraph is available
+    if (typeof ForceGraph === 'undefined') {
+      setTimeout(initGraph, 100);
+      return;
+    }
+
+    // Wait for container to have dimensions
+    const width = container.offsetWidth;
+    const height = container.offsetHeight;
+    if (width === 0 || height === 0) {
+      setTimeout(initGraph, 100);
+      return;
+    }
 
     fetch('/graph.json')
       .then(res => {
@@ -202,10 +221,6 @@
         const linkColor = getComputedStyle(document.documentElement).getPropertyValue('--text-muted').trim() || '#999999';
 
         const graphData = { nodes: nodes, links: links };
-
-        if (typeof ForceGraph === 'undefined') {
-          throw new Error('ForceGraph library not loaded');
-        }
 
         const Graph = ForceGraph()(el)
           .graphData(graphData)

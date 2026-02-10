@@ -73,6 +73,8 @@
         const width = container.offsetWidth;
         const height = container.offsetHeight;
         if (width === 0 || height === 0) {
+            // Container not yet laid out - retry after layout
+            setTimeout(() => renderGraph(graphData, id, delay, fullScreen), 200);
             return;
         }
         // Remove any previous inner graph container and create a fresh one
