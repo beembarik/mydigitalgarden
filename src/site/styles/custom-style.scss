@@ -107,6 +107,13 @@ body {
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
       IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
    ***/
+/* navbar text style */
+.navbar h1 {
+        font-size: 28px !important;
+        font-weight: 600 !important;
+        color: var(--text-normal);
+        margin-right: 15px;
+}
     //  background-color: white;
     //  .content {
     //   font-size: 14px;
