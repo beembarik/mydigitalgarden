@@ -1,56 +1,60 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2026-02-08T07:10:35.478+07:00","updated":"2026-05-11T19:23:05.016+07:00"}
+{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2026-05-12T11:07:39.527+07:00","updated":"2026-05-12T11:10:29.415+07:00"}
 ---
 
 # TARTILA GARDEN
 ![icon-512.png](/img/user/assets/icon-512.png)
-# Tartila Garden
+## Tartila Garden
 
-## Ideas wander, drift, and roam.
-##### <font color=green> This little garden gives them a home. </font>
-
----
-
-This is my digital garden—a public notebook of notes, reflections,
-and small experiments while learning tajwid, tahsin, and memorizing the Qur’an.
-
-Nothing here is final.
-Some ideas will change.
-Some notes will grow.
-This space evolves as I learn.
+> *Ide-ide mengembara, melayang, dan berkelana.*
+> *Taman kecil ini memberi mereka rumah.*
 
 ---
 
-What grows in this garden
+Ini adalah taman digital saya — sebuah buku catatan publik berisi catatan, refleksi, dan eksperimen kecil selama belajar tajwid, tahsin, dan menghafal Al-Qur'an.
 
-- Tajwid and tahsin notes
-- Reflections from learning and teaching
-- Memorization methods and observations
-- Unfinished thoughts worth revisiting
+Saya bukan ustadz. Saya hanya seorang pelajar yang mencatat perjalanannya.
 
----
+Tidak ada yang final di sini.
+Beberapa ide akan berubah.
+Beberapa catatan akan tumbuh.
+Ruang ini berkembang seiring saya belajar.
 
-How to read this garden
-
-This garden isn’t meant to be read from start to finish.
-
-You can:
-
-- browse notes
-- follow links between pages
-- explore the graph
-- or land anywhere and simply wander
+*Taman ini mulai ditanam pada 2025.*
 
 ---
 
-Start exploring
+## Apa yang tumbuh di sini
 
-- [[01 Tajwid/1.1 Tajwid\|1.1 Tajwid]]
-- [[02 Tahfiz/Tahfizh\|Tahfizh]]
-- [[03 Reflection/Reflections\|Reflections]]
+- **Tajwid & Tahsin** — catatan hukum bacaan, dari dasar hingga lanjutan
+- **Tahfizh** — metode menghafal, pengamatan, dan refleksi perjalanan hafalan
+- **Refleksi** — pikiran dari proses belajar dan mengajar yang belum selesai, namun layak dikunjungi kembali
 
 ---
 
-`
-`A garden grows slowly.`
-`So do we.`
+## Cara membaca taman ini
+
+Taman ini tidak dimaksudkan untuk dibaca dari awal hingga akhir.
+
+Kamu bisa:
+
+- menelusuri catatan
+- mengikuti tautan antar halaman
+- menjelajahi grafik koneksi
+- atau mendarat di mana saja dan sekadar berkelana
+
+---
+
+## Mulai menjelajah
+
+- [[01 Tajwid/1.1 Tajwid\|1.1 Tajwid]] — hukum-hukum bacaan Al-Qur'an
+- [[02 Tahfiz/Tahfizh\|Tahfizh]] — catatan perjalanan menghafal
+- [[03 Reflection/Reflections\|Reflections]] — renungan dan pelajaran
+
+---
+
+> *وَرَتِّلِ ٱلْقُرْءَانَ تَرْتِيلًا*
+> *"Dan bacalah Al-Qur'an itu dengan perlahan-lahan."*
+> — QS. Al-Muzzammil: 4
+
+*Taman tumbuh perlahan. Begitu pula kita.*
