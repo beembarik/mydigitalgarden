@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2026-05-12T11:07:39.527+07:00","updated":"2026-05-12T11:10:29.415+07:00"}
+{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"created":"2026-05-12T11:07:39.527+07:00","updated":"2026-05-12T11:12:32.463+07:00"}
 ---
 
 # TARTILA GARDEN
 ![icon-512.png](/img/user/assets/icon-512.png)
-## Tartila Garden
+
 
 > *Ide-ide mengembara, melayang, dan berkelana.*
 > *Taman kecil ini memberi mereka rumah.*
