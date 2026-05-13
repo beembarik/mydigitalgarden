@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"created":"2026-05-12T11:07:39.527+07:00","updated":"2026-05-12T11:12:32.463+07:00"}
+{"dg-publish":true,"permalink":"/home/","hide":true,"hideInGraph":true,"tags":["gardenEntry"],"created":"2026-05-12T11:07:39.527+07:00","updated":"2026-05-13T12:31:48.487+07:00"}
 ---
 
 # TARTILA GARDEN
