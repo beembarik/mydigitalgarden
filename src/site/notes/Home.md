@@ -1,26 +1,31 @@
 ---
-{"dg-publish":true,"permalink":"/home/","hide":true,"hideInGraph":true,"tags":["gardenEntry"],"created":"2026-05-12T11:07:39.527+07:00","updated":"2026-05-13T12:31:48.487+07:00"}
+{"dg-publish":true,"permalink":"/home/","hide":true,"hideInGraph":true,"tags":["gardenEntry"],"created":"2026-05-12T11:07:39.527+07:00","updated":"2026-06-13T06:24:16.897+07:00"}
 ---
 
 # TARTILA GARDEN
 ![icon-512.png](/img/user/assets/icon-512.png)
 
 
-> *Ide-ide mengembara, melayang, dan berkelana.*
-> *Taman kecil ini memberi mereka rumah.*
+> *Ilmu itu ibarat tanaman, 
+> bila dirawat ia akan tumbuh indah —berbuah dan bermanfaat, 
+> bila tidak, ia akan menjadi liar atau mati menjadi sampah.*
 
 ---
+ Imam Syafi'i *rahimahumullah* pernah berkata:
+>  Ilmu adalah buruan dan tulisan adalah ikatannya
+> Ikatlah buruanmu dengan tali yang kuat
+> Termasuk kebodohan kalau engkau memburu kijang
+> Setelah itu kamu tinggalkan terlepas begitu saja
 
-Ini adalah taman digital saya — sebuah buku catatan publik berisi catatan, refleksi, dan eksperimen kecil selama belajar tajwid, tahsin, dan menghafal Al-Qur'an.
+Maka aku berharap web ini sebagai media pengikat ilmu itu.
+Ini web yang aku khususkan untuk menulis tentang taahsin dan tajwid, dibuat dalam bentuk *digital* *garden* atau taman digital — sebuah buku catatan publik berisi catatan dan refleksi selama belajar tajwid, tahsin, dan menghafal Al-Qur'an.
 
-Saya bukan ustadz. Saya hanya seorang pelajar yang mencatat perjalanannya.
+Saya bukan ustadz, hanya seorang pelajar yang mencatat perjalanannya agar tidak hilang ditelan masa.
 
-Tidak ada yang final di sini.
-Beberapa ide akan berubah.
-Beberapa catatan akan tumbuh.
-Ruang ini berkembang seiring saya belajar.
+Karena membawa konsep *digital garden* maka aku akan catat apa yang kuingat tapi catatan itu bisa saja berubah dikemudian hari sesuai pemahaman yang aku miliki. 
+Catatan akan bertumbuh seperti tanaman di dalam taman yang disiram dengan ingatan pemikiran mendalam. Taman ini berkembang seiring saya belajar, begitulah konsep digital garden.
 
-*Taman ini mulai ditanam pada 2025.*
+*Taman ini mulai ditanam pada 2026.*
 
 ---
 
@@ -57,4 +62,4 @@ Kamu bisa:
 > *"Dan bacalah Al-Qur'an itu dengan perlahan-lahan."*
 > — QS. Al-Muzzammil: 4
 
-*Taman tumbuh perlahan. Begitu pula kita.*
+*Taman tumbuh perlahan. Seperti ilmu dituntut dengan penuh kesabaran *
