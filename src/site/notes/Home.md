@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","hide":true,"hideInGraph":true,"tags":["gardenEntry"],"created":"2026-05-12T11:07:39.527+07:00","updated":"2026-09-24T17:38:27.354+07:00"}
+{"dg-publish":true,"permalink":"/home/","hide":true,"hideInGraph":true,"tags":["gardenEntry"],"created":"2026-05-12T11:07:39.527+07:00","updated":"2026-09-25T05:13:35.596+07:00"}
 ---
 
 # TARTILA GARDEN
@@ -54,7 +54,7 @@ Kamu bisa:
 - [[01 Tajwid/00 Tajwid\|00 Tajwid]] — hukum-hukum bacaan Al-Qur'an
 - [[02 Tahfiz/Tahfizh\|Tahfizh]] — catatan perjalanan menghafal
 - [[03 Reflection/Reflections\|Reflections]] — renungan dan pelajaran
-- [[04 Adab Ahli Quran/00-adab-ahli-quran\|00-adab-ahli-quran]]
+- [[04 Adab Ahli Quran/00 Adab Ahli Qur'an\|00 Adab Ahli Qur'an]]
 
 ---
 
